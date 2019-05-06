@@ -1,0 +1,12 @@
+<!--<span
+  class="glyphicon"
+  [class.glyphicon-star]="isCourse"
+  [class.glyphicon-star-empty]="!isCourse"
+  (click)="onClick()"
+  >Star</span>
+-->
+  <span
+  class="glyphicon"
+  [ngClass]="{'glyphicon-star':isCourse,'glyphicon-star-empty':!isCourse}" (click)="onClick()"
+  >Star</span>
+
